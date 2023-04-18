@@ -3,25 +3,33 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --bodyOverflow: auto;
+  --mainVisibility: visible;
+  --horizontalPadding: 75px;
+  --horizontalPaddingMobile: 40px;
+  --buttonColor: #39a9dc;
+  --buttonTextColor: #000000;
+  --background: #121212;
+  --textPrimary: #ffffff;
+  --illuminem_main_blue: #0e80c0;
+  --illuminem_main_white: #ededed;
+  --illuminem_seconday_white: #545454;
+  --illuminem_third_white: #cccccc;
+  --illuminem_forth_white: #999;
+  --illuminem_main_black: #121212;
+  --illuminem_seconday_black: #202020;
+  --illuminem_border_radius: 10px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  box-sizing: border-box;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: var(--background);
+  color: var(--textPrimary);
+  font-family: "Circular", sans-serif;
+  font-weight: 400;
+  padding: 0px;
+  margin: 0px;
 }
