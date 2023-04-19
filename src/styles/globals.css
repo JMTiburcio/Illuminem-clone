@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "~bootstrap/dist/css/bootstrap.min.css";
 
 :root {
   --bodyOverflow: auto;
@@ -19,6 +17,8 @@
   --illuminem_main_black: #121212;
   --illuminem_seconday_black: #202020;
   --illuminem_border_radius: 10px;
+
+  --nav-bar-link-color: #e5e5e5;
 }
 
 * {
@@ -32,4 +32,27 @@ body {
   font-weight: 400;
   padding: 0px;
   margin: 0px;
+}
+
+.nav-link {
+  color: var(--nav-bar-link-color);
+}
+
+.nav-link:hover {
+  color: var(--nav-bar-link-color);
+  opacity: 0.5;
+}
+
+.navbar-toggler-icon {
+  color: var(--nav-bar-link-color);
+  background-color: transparent;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 100px;
+  margin-right: 20px;
+}
+
+.card {
+  background-color: var(--background);
 }
