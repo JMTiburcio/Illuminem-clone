@@ -11,7 +11,7 @@
   --textPrimary: #ffffff;
   --illuminem_main_blue: #0e80c0;
   --illuminem_main_white: #ededed;
-  --illuminem_seconday_white: #545454;
+  --illuminem_secondary_white: #545454;
   --illuminem_third_white: #cccccc;
   --illuminem_forth_white: #999;
   --illuminem_main_black: #121212;
@@ -55,4 +55,15 @@ body {
 
 .card {
   background-color: var(--background);
+}
+
+.form-control,
+.form-control:focus {
+  background-color: transparent;
+  color: var(--textPrimary);
+  border-color: var(--illuminem_secondary_white);
+}
+
+.pl-4 {
+  padding-left: 2rem;
 }
