@@ -1,4 +1,5 @@
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
+import { BsList } from "react-icons/bs";
 
 import Logo from "../Logo";
 
@@ -9,7 +10,9 @@ export default function NextNavbar() {
         <Navbar.Brand className="mr-3" href="/">
           <Logo />
         </Navbar.Brand>
-        <Navbar.Toggle />
+        <Navbar.Toggle>
+          <BsList fill="#545454" />
+        </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav>
             <Nav.Link className="mr-3" href="/">
