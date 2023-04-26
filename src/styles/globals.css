@@ -52,6 +52,14 @@ body {
   padding-left: 2rem;
 }
 
+.pl-3 {
+  padding-left: 1.5rem;
+}
+
+.pl-2 {
+  padding-left: 1rem;
+}
+
 .mr-1 {
   margin-right: 0.5rem;
 }
@@ -103,11 +111,13 @@ body {
 .carousel-control-prev {
   justify-content: flex-start;
   left: -30px;
+  width: 7%;
 }
 
 .carousel-control-next {
   justify-content: flex-end;
   right: -30px;
+  width: 8%;
 }
 
 @media (max-width: 575.98px) {
@@ -130,6 +140,28 @@ body {
   background-color: transparent;
   color: var(--textPrimary);
   border-color: var(--illuminem_secondary_white);
+}
+
+/* --------------- */
+/* ---- MODAL ---- */
+/* --------------- */
+
+.modal-content {
+  background-color: var(--background);
+}
+
+.modal-dialog {
+  max-width: 750px;
+}
+
+.modal-header {
+  height: 200px;
+}
+
+@media (min-width: 576px) {
+  .modal-header {
+    height: 350px;
+  }
 }
 
 /* ---------------- */
