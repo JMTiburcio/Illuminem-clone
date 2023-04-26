@@ -9,7 +9,8 @@ interface Data {
   description: string;
   image: string;
   color: string;
-  category: [string, string];
+  type: string;
+  category: string[];
 }
 
 interface Props {
@@ -67,6 +68,7 @@ export default function News({ data, title, main }: Props) {
           imgSrc={item.image}
           text={item.description}
           color={item.color}
+          type={item.type}
           category={item.category}
         />
       );
